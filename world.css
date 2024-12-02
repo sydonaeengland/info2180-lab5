@@ -1,1 +1,101 @@
-/* Add your own styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  background: linear-gradient(rgba(0, 86, 179, 0.6), rgba(0, 86, 179, 0.6)),
+    url("worldmapbackground.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Header Styles */
+header {
+  background-color: #014997;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+main {
+  padding: 20px;
+  height: calc(100vh - 80px - 40px);
+  overflow-y: auto;
+}
+
+#controls {
+  margin-bottom: 20px;
+}
+
+#controls input {
+  padding: 10px;
+  width: 50%;
+  font-size: 1em;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#controls button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+#controls button:hover {
+  background-color: #0056b3;
+}
+
+/* Results Table */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: white;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+table td {
+  font-size: 1em;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+  background-color: #0057b3;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const lookupButton = document.getElementById("lookup");
+  const lookupCountryButton = document.getElementById("lookup-country");
   const countryInput = document.getElementById("country");
   const resultDiv = document.getElementById("result");
 
-  lookupButton.addEventListener("click", () => {
+  lookupCountryButton.addEventListener("click", () => {
     const country = countryInput.value.trim();
     const url = `world.php?country=${encodeURIComponent(country)}`;
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         resultDiv.innerHTML = data;
       })
       .catch((error) => {
-        console.error("There was a problem with the fetch operation:", error);
+        console.error("Fetch error:", error);
         resultDiv.innerHTML =
           "<p>Error retrieving data. Please try again later.</p>";
       });
